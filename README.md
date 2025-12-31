@@ -1,59 +1,62 @@
-# atm-simulation-c
-A simple ATM simulation project in C for learning control flow, functions, and file structure.
+# 🏧 Program Simulasi ATM (Bahasa C)
 
-# 🏧 ATM Simulation Program (C Language)
+Program **Simulasi ATM berbasis Bahasa C** yang berjalan di terminal (console).  
+Project ini mensimulasikan fitur ATM pada umumnya seperti **autentikasi PIN, setoran tunai, penarikan tunai, transfer dana, dan cek saldo**.
 
-Program **ATM Sederhana berbasis Bahasa C** yang mensimulasikan proses transaksi perbankan seperti ATM pada umumnya.  
-Project ini dibuat untuk **latihan logika pemrograman, kontrol alur, dan portofolio GitHub**.
+Project ini dibuat sebagai **latihan logika pemrograman**, **struktur program C**, serta **portofolio GitHub**.
 
 ---
 
 ## ✨ Fitur Utama
 
-- 🔐 **Autentikasi PIN**
-  - Maksimal 3 kali percobaan
-  - Kartu diblokir jika PIN salah
+🔐 **Autentikasi PIN**
+- Verifikasi PIN pengguna
+- Maksimal 3 kali percobaan
+- Kartu diblokir jika PIN salah 3 kali
 
-- 💰 **Manajemen Saldo**
-  - Saldo awal: Rp1.000.000
-  - Setoran tunai
-  - Penarikan tunai
-  - Cek saldo
+💰 **Manajemen Saldo**
+- Saldo awal: Rp1.000.000
+- Setoran tunai
+- Penarikan tunai
+- Informasi cek saldo
 
-- 🏦 **Menu Penarikan Cepat**
-  - Rp100.000
-  - Rp500.000
-  - Rp1.000.000
-  - Hingga Rp2.500.000
- 
-- 🔁 **Transaksi Lainnya**
-  - Transfer dana (dengan biaya admin)
-  - Penarikan nominal bebas
-  - Informasi saldo
+🏦 **Menu Penarikan Cepat**
+- Rp100.000
+- Rp500.000
+- Rp1.000.000
+- Rp1.500.000
+- Rp2.000.000
+- Rp2.500.000
 
-- ✅ **Validasi Saldo**
-  - Transaksi dibatalkan jika saldo tidak mencukupi
-  - Saldo tidak bisa minus
+🔁 **Transaksi Lainnya**
+- Transfer dana (dengan biaya admin)
+- Penarikan tunai nominal bebas
+- Informasi saldo
 
-- 🎨 **Tampilan Console Interaktif**
-  - Banner ASCII
-  - Menu rapi dan jelas
+✅ **Validasi Transaksi**
+- Penarikan dan transfer tidak dapat melebihi saldo
+- Saldo tidak akan menjadi minus
+
+🎨 **Tampilan Console**
+- Banner ASCII
+- Menu rapi dan mudah dipahami
 
 ---
 
 ## 🛠️ Teknologi yang Digunakan
 
-- Bahasa Pemrograman: **C**
-- Compiler: **GCC**
-- Sistem Operasi: Linux / Windows / MacOS
+- **Bahasa Pemrograman:** C
+- **Compiler:** GCC
+- **Platform:** Linux / Windows / macOS
+- **Antarmuka:** Command Line Interface (CLI)
 
 ---
 
-## 📂 Struktur File
+## 📂 Struktur Folder
 
 ```bash
 .
 ├── main.c      # Program utama
-├── atm.c       # Implementasi fungsi ATM
+├── atm.c       # Logika dan menu ATM
 ├── atm.h       # Header file
 └── README.md   # Dokumentasi project
